@@ -1,0 +1,66 @@
+index_html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{full_name}</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: {color_scheme};
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        header {{
+            background-color: #2980b9;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }}
+        section {{
+            width: 80%;
+            margin: 20px 0;
+        }}
+        footer {{
+            background-color: #2980b9;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{full_name}</h1>
+        <p>{profession}</p>
+        <p>{tagline}</p>
+    </header>
+    <section>
+        <h2>About</h2>
+        <p>{sections['About']}</p>
+    </section>
+    <section>
+        <h2>Professional background</h2>
+        <p>{sections['Professional background']}</p>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <p>{sections['Skills']}</p>
+    </section>
+    <section>
+        <h2>future Aspritions</h2>
+        <p>{sections['future Aspritions']}</p>
+    </section>
+    <footer>
+        <p>Contact: {sections['contact']}</p>
+    </footer>
+</body>
+</html>
+"""
